@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+   <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About me</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-minus-square" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Me</h1>
+
+   </section>
+
+   <!-------- about me content-->
+
+   <section class="about-us">
+     
+    <div class="row">
+        <div class="about-col">
+            <h1>About me</h1> <a href="SamuilKotselovCV.pdf">Click here to view my CV</a></h3>
+
+            <p>Hello there, I'm Sam. I've always been intrigued into the spectrum of video games ever since childhood.
+              Getting to play as my favourite characters inside a well designed world built around plot and adventuring,
+              who wouldn't want that? <br> <br>As time went on, I started to analyze every game I played to the point where I questioned myself :<br>
+              "What If I were to create something like this?".<br> <br>
+              That's when I started looking more in-depth into the process of game development as a whole and that's why I'm currently studying
+              at the University of Greenwich. <br> <br>
+              During my first and current second year of programming I've experienced many things ranging from <br>
+              challenging myself and pushing my limit to polishing my communicative skills and teamwork. <br>
+              As a result, I've improved by quite a lot now when i look back and I'm looking forward to
+              the next oncoming challenges! <br> <br>
+              Other from playing or making games, I enjoy physical activity, reading books and video editing. <br></p>
+        </div>
+        <div class="about-col">
+            <img src="pictureofme.png">
+        </div>
+    </div>
+    
+   </section>
+
+<!-------Footer--->
+
+   <section class="footer">
+    <h4>Made by Samuil Kotselov</h4>
+    <p>Got any questions? Contact me!</p>
+    <br> 
+    <h2>Instagram</h2> 
+    <a href="https://www.instagram.com/kosselow/">
+    <img src="instagramicon.png" alt="insta icon" width="64" height="64"</a>
+    <br> 
+    <br>
+    <h2>Email</h2>
+    <a href="mailto:samuilkotselov@gmail.com">
+    <img src="googleicon.png" alt="email icon" width="64" height="64"></a>
+    <br> 
+    <br>
+    <h2>LinkedIn</h2>
+    <a href="https://www.linkedin.com/in/samuil-kotselov-5648b92b2/">
+     <img src="linkedinicon.png" alt="linkedin icon" width="64" height="64"</a>
+</section>
+
+
+
+<!---- JS script for toggling the menu for phone users --->
+   <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+   </script>
+</body>
+</html>

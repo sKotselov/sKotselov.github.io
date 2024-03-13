@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+   <section class="header"> 
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About me</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-minus-square" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Welcome to my Portfolio page!</h1> <br>
+    <p>Hello, my name is Samuil Mariov Koteselov.<br> I'm currently a second year student studying at the University of Greenwich<br>
+        as a Game Development student (Programming). <br>
+       I hope to further improve my skills as a programmer and problem-solver, <br>
+       so I produce higher quality products and keep creating memorable experiences!. </p>
+    <a href="" class="hero-btn">Scroll down for projects</a>
+</div>
+
+   </section>
+
+<!----- course  -->
+
+<section class="course">
+    <h1>Courseworks</h1>
+    <p>These are the projects that I've made in the past year : </p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>It's Powdin' Time!</h3>
+            <p>My third project. <br>A fast-paced platformer
+              which <br> follows the adventure of a little cat<br>
+              named Powder!</p>
+        </div>
+        <div class="course-col">
+            <h3>Cookie's Adventure</h3>
+            <p> As the title says, <br>
+                It's the adventure of our little rabbit, Cookie! <br>
+                My first ever project that consists of <br>
+                puzzle solving and well-timed platforming. 
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Zombie Shootout</h3>
+            <p>My second project is called Zombie Shootout. <br>
+              It's a fast-paced top-down shooter that involves <br>
+              a lot of decision making and strategizing. </p>
+        </div>
+    </div>
+    
+</section>
+
+<!-----campus------>
+
+<section class="campus">
+    <h1>Images of the given projects</h1>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="itspowdintime.png">
+            <div class="layer">
+                <h3>It's Powdin'Time!</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="cookiesadventure.png">
+            <div class="layer">
+                <h3>Cookie's Adventure</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="zombieshootout.png">
+            <div class="layer">
+                <h3>Zombie Shootout</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-------Footer--->
+
+<section class="footer">
+    <h4>Made by Samuil Kotselov</h4>
+    <p>Got any questions? Contact me!</p>
+    <br> 
+    <h2>Instagram</h2> 
+    <a href="https://www.instagram.com/kosselow/">
+    <img src="instagramicon.png" alt="insta icon" width="64" height="64"</a>
+    <br> 
+    <br>
+    <h2>Email</h2>
+    <a href="mailto:samuilkotselov@gmail.com">
+    <img src="googleicon.png" alt="email icon" width="64" height="64"></a>
+    <br> 
+    <br>
+    <h2>LinkedIn</h2>
+    <a href="https://www.linkedin.com/in/samuil-kotselov-5648b92b2/">
+     <img src="linkedinicon.png" alt="linkedin icon" width="64" height="64"</a>
+</section>
+
+
+
+<!---- JS script for toggling the menu for phone users --->
+   <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+   </script>
+</body>
+</html>
